@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark oscuro fixed-top">
+    <a class="navbar-brand" [routerLink]="'home'"><img class="logo" src="assets/img/Logo@2x.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end " id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="'pedido/nuevo'"><i class="fas fa-clipboard-list fa-lg"></i> HACER UN PEDIDO</a>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link" [routerLink]="'compras'"><i class="fas fa-shopping-cart fa-lg"></i> MIS COMPRAS</a>
+            </li>
+            <li class="nav-item" *ngIf="estaA" routerLinkActive=" active ">
+                <a class="nav-link " [routerLink]=" 'pedidos' "><i class="fas fa-list-ul fa-lg "></i> PEDIDOS</a>
+            </li>
+            <li class="nav-item cur">
+                <a class="nav-link " *ngIf="!estaA" (click)="registro()"><i class="fas fa-user-circle fa-lg"></i> INGRESAR</a>
+            </li>
+            <li class="nav-item cur">
+                <a class="nav-link" *ngIf="estaA" (click)="salir()"><i class="fas fa-sign-out-alt fa-lg"></i></a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<div *ngIf="registro1" class="ingr animated fadeInDown">
+
+    <div id="registro">
+        <i class="fas fa-times-circle fa-lg" (click)="cancelar()"></i>
+        <img id="logoReg" src="assets/img/LogoReg@2x.png">
+        <label class="labelReg" for="correo">Correo</label>
+        <input type="email" class="form-control entradaReg" id="correo" [(ngModel)]="usuario.email">
+        <label class="labelReg" for="pass">Contraseña</label>
+        <input type="password" class="form-control entradaReg" id="pass" [(ngModel)]="usuario.password">
+        <button (click)="login()" id="buttonReg">INGRESAR</button>
+    </div>
+</div>

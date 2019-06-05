@@ -1,0 +1,857 @@
+/* You can add global styles to this file, and also import other style files */
+
+.oscuro {
+    background-color: #313131!important;
+    height: 80px!important;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 45%;
+    font-family: 'Arimo', sans-serif!important;
+}
+
+.logo {
+    height: 50px;
+}
+
+.fas {
+    color: #F1776B;
+}
+
+.footer img {
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    padding-top: 30px;
+}
+
+.inst {
+    padding: 3%;
+}
+
+.inst1 {
+    padding: 40px;
+    width: 380px!important;
+    cursor: pointer;
+}
+
+.inst1:hover {
+    width: 385px!important;
+}
+
+.inst4 {
+    margin-left: 35%;
+    width: 300px!important;
+    height: auto;
+    cursor: pointer;
+}
+
+.inst4:hover {
+    width: 365px!important;
+}
+
+.inst2 {
+    position: absolute;
+    z-index: 2;
+    top: 38%;
+    left: 35%;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 20px;
+}
+
+.inst3 {
+    position: absolute;
+    z-index: 2;
+    top: 38%;
+    left: 20%;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 20px;
+}
+
+.pedido {
+    position: absolute;
+    z-index: 2;
+    background-color: #F1776B;
+    color: white;
+    left: 10%;
+    top: 15%;
+    width: 210px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.pedido:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ingr {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    z-index: 3;
+}
+
+.partePedido {
+    margin-top: 25px;
+    margin: 20px;
+    margin-bottom: 50px;
+    background-color: #F3F3F3;
+    border-radius: 15px;
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+}
+
+.tituloE {
+    width: 300px!important;
+    margin: auto;
+    margin-left: 40px;
+}
+
+.tituloE1 {
+    width: 500px!important;
+    margin: auto;
+    margin-left: 40px;
+}
+
+.select2 {
+    margin-top: 50px;
+}
+
+.direccion {
+    margin-top: 0px;
+    margin-left: 30px;
+    width: 715px!important;
+}
+
+.direccion1 {
+    margin-top: 0px;
+    margin-left: 50px;
+    width: 480px!important;
+}
+
+.bolsa {
+    position: absolute;
+    width: 170px!important;
+    z-index: 2;
+    left: 260px;
+    top: 100px;
+}
+
+.bolsa1 {
+    position: absolute;
+    width: 260px!important;
+    z-index: 2;
+    left: 220px;
+    top: 100px;
+}
+
+.bolsa2 {
+    position: absolute;
+    width: 360px!important;
+    z-index: 2;
+    left: 195px;
+    top: 100px;
+}
+
+.caja {
+    position: absolute;
+    width: 300px!important;
+    z-index: 2;
+    left: 200px;
+    top: 130px;
+}
+
+.bolsa2M {
+    position: absolute;
+    width: 330px!important;
+    z-index: 2;
+    left: 210px;
+    top: 100px;
+}
+
+.cajaM {
+    position: absolute;
+    width: 360px!important;
+    z-index: 2;
+    left: 150px;
+    top: 70px;
+}
+
+.boxStyle {
+    padding-left: 50px;
+}
+
+.boxStyle select {
+    padding-left: 15px;
+    background: rgb(253, 253, 253);
+    width: 330px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-appearance: button;
+    outline: none;
+    cursor: pointer;
+}
+
+.boxStyle:before {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 80px;
+    left: 345px;
+    width: 50px;
+    height: 50px;
+    background: #B7DCD0;
+    pointer-events: none;
+}
+
+.boxStyle:hover:before {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 80px;
+    left: 345px;
+    width: 50px;
+    height: 50px;
+    background: #B7DCD0;
+}
+
+.boxStyle1 {
+    padding-left: 50px;
+}
+
+.boxStyle1 select {
+    padding-left: 15px;
+    background: rgb(253, 253, 253);
+    width: 330px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-appearance: button;
+    outline: none;
+    cursor: pointer;
+}
+
+.boxStyle1:before {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 62px;
+    left: 345px;
+    width: 50px;
+    height: 50px;
+    background: #B7DCD0;
+    pointer-events: none;
+}
+
+.boxStyle1:hover:before {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 62px;
+    left: 345px;
+    width: 50px;
+    height: 50px;
+    background: #B7DCD0;
+}
+
+.boxStyle2 {
+    padding-left: 50px;
+}
+
+.boxStyle2 select {
+    padding-left: 15px;
+    background: rgb(253, 253, 253);
+    width: 330px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-appearance: button;
+    outline: none;
+    cursor: pointer;
+}
+
+.boxStyle2:before {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 139px;
+    left: 345px;
+    width: 50px;
+    height: 50px;
+    background: #B7DCD0;
+    pointer-events: none;
+}
+
+.boxStyle2:hover:before {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 139px;
+    left: 345px;
+    width: 50px;
+    height: 50px;
+    background: #B7DCD0;
+}
+
+.boxStyle3 {
+    padding-left: 50px;
+}
+
+.boxStyle3 select {
+    padding-left: 15px;
+    background: rgb(253, 253, 253);
+    width: 330px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-appearance: button;
+    outline: none;
+    cursor: pointer;
+}
+
+.boxStyle3:before {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 272px;
+    left: 345px;
+    width: 50px;
+    height: 50px;
+    background: #B7DCD0;
+    pointer-events: none;
+}
+
+.boxStyle3:hover:before {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 272px;
+    left: 345px;
+    width: 50px;
+    height: 50px;
+    background: #B7DCD0;
+}
+
+.boxStyle13 {
+    padding-left: 50px;
+}
+
+.boxStyle13 select {
+    padding-left: 15px;
+    background: rgb(253, 253, 253);
+    width: 285px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-appearance: button;
+    outline: none;
+    cursor: pointer;
+}
+
+.boxStyle13:before {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 33px;
+    left: 300px;
+    width: 50px;
+    height: 50px;
+    background: #F1776B;
+    pointer-events: none;
+}
+
+.boxStyle13:hover:before {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 33px;
+    left: 300px;
+    width: 50px;
+    height: 50px;
+    background: #F1776B;
+}
+
+.boxStyle4 {
+    padding-left: 50px;
+}
+
+.boxStyle4 select {
+    padding-left: 15px;
+    background: rgb(253, 253, 253);
+    width: 330px;
+    height: 50px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-appearance: button;
+    outline: none;
+    cursor: pointer;
+}
+
+.boxStyle4:before {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 242px;
+    left: 345px;
+    width: 50px;
+    height: 50px;
+    background: #B7DCD0;
+    pointer-events: none;
+}
+
+.boxStyle4:hover:before {
+    content: '\f0dd';
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    font-weight: 900;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    top: 242px;
+    left: 345px;
+    width: 50px;
+    height: 50px;
+    background: #B7DCD0;
+}
+
+.entrada {
+    width: 80%;
+    height: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.entradaText {
+    width: 80%;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+label {
+    margin-left: 60px!important;
+    color: #F1776B;
+    font-family: 'Raleway', sans-serif;
+}
+
+.labe {
+    margin-top: 30px!important;
+}
+
+custom-control-input:checked~.custom-control-label::before {
+    color: #F1776B!important;
+    background-color: white!important;
+}
+
+.activo {
+    margin-left: 40px;
+    color: #F1776B;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.pasivo {
+    margin-left: 40px;
+    color: rgb(124, 122, 122);
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.hola {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+small {
+    color: #313131;
+}
+
+.instr {
+    margin-left: 55px;
+}
+
+#precio {
+    margin-left: 80px;
+    color: #F1776B;
+}
+
+#final {
+    width: 450px;
+    margin-top: 0;
+}
+
+h4 {
+    margin-left: 200px;
+    color: #F1776B;
+    margin-top: 90px;
+}
+
+h6 {
+    margin-left: 230px;
+    margin-top: 20px;
+    color: #F1776B;
+}
+
+.gall {
+    margin-left: 290px;
+}
+
+.buttons {
+    margin-top: 30px;
+    padding-left: 240px;
+    margin-bottom: 30px;
+}
+
+#btnMod {
+    border: none;
+    color: white;
+    background-color: #B7DCD0;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+#btnEli {
+    border: none;
+    color: white;
+    background-color: #F1776B;
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+.bolsaF {
+    position: absolute;
+    width: 130px!important;
+    z-index: 2;
+    left: 190px;
+    top: 30px;
+}
+
+.bolsa1F {
+    position: absolute;
+    width: 190px!important;
+    z-index: 2;
+    left: 170px;
+    top: 30px;
+}
+
+.bolsa2F {
+    position: absolute;
+    width: 290px!important;
+    z-index: 2;
+    left: 130px;
+    top: 20px;
+}
+
+.cajaF {
+    position: absolute;
+    width: 210px!important;
+    z-index: 2;
+    left: 150px;
+    top: 40px;
+}
+
+.bolsa2MF {
+    position: absolute;
+    width: 250px!important;
+    z-index: 2;
+    left: 160px;
+    top: 10px;
+}
+
+.cajaMF {
+    position: absolute;
+    width: 270px!important;
+    z-index: 2;
+    left: 115px;
+    top: 10px;
+}
+
+.hol {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.hol:hover {
+    width: 305px!important;
+}
+
+.hola1 {
+    margin-left: 40%;
+}
+
+.hola1:hover {
+    width: 305px!important;
+}
+
+#registro {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(248, 247, 247);
+    width: 300px;
+    height: 365px;
+    border: none;
+    border-radius: 1%;
+}
+
+#logoReg {
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 55px;
+    margin-bottom: 20px;
+}
+
+.entradaReg {
+    width: 250px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+.labelReg {
+    margin-left: 30px!important;
+}
+
+#buttonReg {
+    margin-top: 30px;
+    border: none;
+    background-color: #F1776B;
+    color: white;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+}
+
+#buttonReg:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #B7DCD0;
+}
+
+.animated {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.fa-times-circle {
+    position: absolute;
+    z-index: 4;
+    top: 15px;
+    left: 90%;
+    cursor: pointer;
+}
+
+#pedidosT {
+    margin-top: 30px;
+    color: #F1776B;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 45%;
+    margin-bottom: 30px;
+}
+
+.table {
+    margin-left: 8%;
+    width: 85%;
+    background-color: white;
+    margin-bottom: 70px;
+}
+
+.iconTabla {
+    color: white;
+}
+
+.btnTabla {
+    background-color: #F1776B;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btnTabla:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btnTabla1 {
+    background-color: rgb(161, 206, 192);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btnTabla1:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.fondo {
+    margin-top: 100px;
+    padding-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #F3F3F3;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.cur {
+    cursor: pointer;
+}
+
+.alert {
+    margin: 40px;
+    height: auto;
+    padding: 10px;
+}
+
+.alert-heading {
+    margin: 0;
+}
+
+.pedidosInfo {
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 1px;
+}
+
+.gallInfo {
+    margin-left: 20%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.infoEmpaque {
+    margin-left: 15%;
+    width: 75%;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Cump {
+    position: absolute;
+    z-index: 4;
+    top: 160px;
+    left: 190px;
+    width: 250px!important;
+}
+
+.Nav {
+    position: absolute;
+    z-index: 4;
+    top: 165px;
+    left: 170px;
+    width: 290px!important;
+}
+
+.San {
+    position: absolute;
+    z-index: 4;
+    top: 190px;
+    left: 170px;
+    width: 280px!important;
+}

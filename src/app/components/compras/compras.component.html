@@ -1,0 +1,94 @@
+<img src="assets/img/3@2x.png">
+<div class="partePedido">
+    <img class="direccion" src="assets/img/direccion@2x.png">
+    <br><br>
+    <div class="row">
+        <div class="col-6">
+            <label [class]="select1" (click)="select('1')">UNIVERSIDAD<br><small>Selecciona si lo quieres en tu universidad</small></label>
+            <br><br>
+            <div *ngIf="siU" class="boxStyle">
+                <select [ngModel]="pedido.direccion" (ngModelChange)="cambioDireccion($event)">
+                    <option value="Sergio Arboleda">Sergio Arboleda</option>
+                    <option value="Nacional">Nacional</option>
+                    <option value="Javeriana">Javeriana</option>
+                </select>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <label [class]="select2" (click)="select('2')">OTRA DIRECCIÓN<br><small>Selecciona si lo quieres en otra dirreción</small></label>
+            <br><br>
+            <input *ngIf="siD" type="text" [(ngModel)]="pedido.direccion" class="form-control entrada" id="inputAddress" name="direccion">
+
+        </div>
+        <div class="col-6">
+            <img class="tituloE" src="assets/img/fecha@2x.png">
+        </div>
+        <div class="col-6"></div>
+        <div class="col-6">
+
+            <label for="inputAddress2">FECHA ENTREGA</label>
+            <input type="date" class="form-control entrada" id="inputAddress2" [(ngModel)]="pedido.fecha">
+        </div>
+        <div class="col-6">
+            <label for="inputAddress2">NÚMERO DE CELULAR</label>
+            <input type="number" class="form-control entrada" id="inputAddress2" [(ngModel)]="pedido.numero">
+        </div>
+        <div class="col-6">
+            <br><br>
+            <label for="inputAddress2">NOMBRE</label>
+            <input type="text" class="form-control entrada" id="inputAddress2" [(ngModel)]="pedido.nombre">
+            <img class="direccion1" src="assets/img/resumen@2x.png">
+        </div>
+        <div class="col-6">
+            <label class="labe" for="exampleFormControlTextarea1">INSTRUCCIONES AL VENDEDOR</label>
+            <textarea class="form-control entradaText" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="pedido.instrucciones"></textarea>
+
+        </div>
+    </div>
+    <div class="row" *ngFor="let item of pedido.pedidos; let i = index">
+        <div class="col-6">
+            <h4>{{item.tipo}}</h4>
+            <h6>TAMAÑO: <small>{{item.tamano}}</small></h6>
+            <h6>COLOR: <small>{{item.color}}</small></h6>
+            <h6>GALLETAS</h6>
+            <small class="gall">GOTAS DE LLUVIA X{{item.galletas[0].cantidad}}</small>
+            <br>
+            <small class="gall">IDILIO DE AMOR X{{item.galletas[1].cantidad}}</small>
+            <br>
+            <small class="gall">QUIÉREME SIEMPRE X{{item.galletas[2].cantidad}}</small>
+            <h6>TARJETA: <small>{{item.tarjeta}}</small></h6>
+            <div class="row buttons">
+                <div class="col-6 ">
+                    <button id="btnMod" (click)="modificarPedido(i)">MODIFICAR</button>
+                </div>
+                <div class="col-6">
+                    <button id="btnEli" (click)="eliminarPedido(i)">ELIMINAR</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-6">
+            <img id="final" src="assets/img/empaqueBack@2x.png">
+            <img class="{{item.clase}}" src="{{item.src}}">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-4">
+            <h3>TOTAL</h3>
+        </div>
+        <div class="col-4">
+            <h3 id="precio">{{pedido.precioTotal}}</h3>
+            <br>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-12">
+            <img class="inst4 hola1" src="assets/img/botonEn@2x.png" (click)="hacerPedido()">
+        </div>
+
+
+    </div>
+
+</div>
+<app-footer></app-footer>

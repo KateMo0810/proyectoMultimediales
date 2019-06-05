@@ -1,0 +1,64 @@
+<div class="fondo">
+    <h2 ID="pedidosT">
+        PEDIDOS</h2>
+
+    <div class="row infoEmpaque" *ngFor="let item of empaques">
+        <div class="col-2"></div>
+        <div class="col-4">
+            <br>
+            <h6 class="pedidosInfo"> EMPAQUE: <small>{{item.tipo}}</small></h6>
+            <h6 class="pedidosInfo"> TAMAÑO: <small>{{item.tamano}}</small></h6>
+            <h6 class="pedidosInfo">COLOR: <small>{{item.color}}</small></h6>
+            <h6 *ngIf="item.tipo=='CLAVE DE AMOR' || item.tipo=='ALGUIEN COMO TÚ'" class="pedidosInfo">DECORACIÓN: <small *ngIf="item.tipo=='CLAVE DE AMOR' || item.tipo=='ALGUIEN COMO TÚ'">{{item.decoracion_}}</small></h6>
+            <h6 class="pedidosInfo">GALLETAS</h6>
+            <small class="gallInfo">GOTAS DE LLUVIA X{{item.galletas[0].cantidad}}</small>
+            <br>
+            <small class="gallInfo">IDILIO DE AMOR X{{item.galletas[1].cantidad}}</small>
+            <br>
+            <small class="gallInfo">QUIÉREME SIEMPRE X{{item.galletas[2].cantidad}}</small>
+            <br><br>
+        </div>
+        <div class="col-4">
+            <br>
+            <h6 class="pedidosInfo">TARJETA: <small>{{item.tarjeta}}</small></h6>
+            <h6 class="pedidosInfo">MENSAJE: <small>{{item.mensaje}}</small></h6>
+            <h6 class="pedidosInfo">INSTRUCIONES: <small>{{inst}}</small></h6>
+        </div>
+        <div class="col-2"></div>
+
+    </div>
+
+    <table *ngIf="pedidos.length>0" class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Nombre</th>
+                <th scope="col">Número</th>
+                <th scope="col">Dirección</th>
+                <th scope="col">Fecha entrega</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Más info.</th>
+                <th scope="col">Estado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of pedidos; let i = index">
+                <th scope="row">{{item.nombre}}</th>
+                <td>{{item.numero}}</td>
+                <td>{{item.direccion}}</td>
+                <td>{{item.fecha}}</td>
+                <td>{{item.precioTotal}}</td>
+                <td><button *ngIf="estan!=i" class="btnTabla1" (click)="verInfo(item,i)"><i class="fas fa-info iconTabla" ></i>  Ver Info</button>
+                    <button *ngIf="estan==i" class="btnTabla1" (click)="ocultar()"><i class="fas fa-eye-slash iconTabla" ></i>  Ocultar</button></td>
+                <td><button class="btnTabla" (click)="actualizar(item)"><i class="fas fa-paper-plane iconTabla" ></i>  Enviado</button></td>
+            </tr>
+
+        </tbody>
+    </table>
+    <div *ngIf="pedidos.length==0" class="alert alert-warning text-center mt-3">
+        <h4 class="alert-heading">No hay pedidos</h4><br>
+        <p>
+            <i class="fa fa-exclamation fa-2x"></i>
+        </p>
+    </div>
+
+</div>

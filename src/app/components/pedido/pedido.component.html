@@ -1,0 +1,139 @@
+<img src="assets/img/2@2x.png">
+<div class="partePedido">
+    <div class="row">
+
+        <div class="col-6">
+            <img src="assets/img/empaqueB@2x.png">
+            <img *ngIf="noEmpaque" [class]="empaque.clase" [src]="empaque.src">
+        </div>
+
+        <div class="col-6">
+            <img class="tituloE" src="assets/img/empaque@2x.png">
+            <div class="select2">
+                <div class="boxStyle2">
+                    <select [ngModel]="empaque.tipo" (ngModelChange)="cambioEmpaque($event)">
+                        <option value="CLAVE DE AMOR">Clave de amor</option>
+                        <option value="LUNA DE MIEL">Luna de miel</option>
+                        <option value="ALGUIEN COMO TÚ">Alguien como tu</option>
+                        <option value="VIDA MÍA">Vida mía</option>
+                    </select>
+                </div>
+            </div>
+            <div class="select2">
+                <label for="exampleFormControlSelect1">TAMAÑO</label>
+                <div class="boxStyle3">
+                    <select [ngModel]="empaque.tamano" (ngModelChange)="cambioTamano($event)">
+                        <option value="GRANDE">Grande</option>
+                        <option value="PEQUEÑO">Pequeño</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <label class="labe" for="exampleFormControlSelect1">COLOR</label>
+            <div class="boxStyle1">
+                <select [ngModel]="empaque.color" (ngModelChange)="cambioColor($event)">
+                    <option value="VERDE">Verde</option>
+                    <option value="ROSADO">Rosado</option>
+                    <option value="MORADO">Morado</option>
+                    <option value="AZUL">Azul</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <label class="labe" for="exampleFormControlSelect1">TIPO DE DECORACIÓN</label>
+            <div class="boxStyle1">
+                <select [ngModel]="empaque.decoracion_" (ngModelChange)="cambioDecoracion($event)">
+                    <option value="Ve">Planta</option>
+                    <option value="Bl">Flor Blanca</option>
+                    <option value="Ro">Flor Roja</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <br><br><br><br>
+            <img class="tituloE" src="assets/img/mensaje@2x.png">
+            <br><br>
+            <label for="exampleFormControlSelect1">TARJETA</label>
+            <div class="boxStyle4">
+                <select [ngModel]="empaque.tarjeta" (ngModelChange)="cambioTarjeta($event)">
+                    <option value="CUMPLEAÑOS">Cumpleaños</option>
+                    <option value="NAVIDAD">Navidad</option>
+                    <option value="SAN VALENTÍN">San Valentín</option>
+                </select>
+            </div>
+            <br>
+            <label class="labe" for="exampleFormControlTextarea1">ESCRIBE TU MENSAJE</label>
+            <textarea [(ngModel)]="empaque.mensaje" class="form-control entradaText" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="col-6">
+            <br><br><br><br>
+            <img class="tituloE1" src="assets/img/empaqueBack@2x.png">
+            <img [class]="empaque.tarjetaClase" [src]="empaque.tarjetaSrc">
+        </div>
+        <div class="col-6"></div>
+        <div class="col-4">
+            <br><br>
+            <img class="tituloE" src="assets/img/galleta@2x.png">
+        </div>
+        <div class="col-2"></div>
+        <div class="col-4">
+            <br><br><br>
+            <img src="assets/img/gotas@2x.png">
+        </div>
+        <div class="col-4">
+            <br><br>
+            <img src="assets/img/idilio@2x.png">
+        </div>
+        <div class="col-4">
+            <br><br>
+            <img src="assets/img/quiereme@2x.png">
+        </div>
+        <div class="col-4">
+            <label for="exampleFormControlSelect1">CANTIDAD</label>
+            <div *ngIf="this.empaque.tamano=='PEQUEÑO'" class="boxStyle13">
+                <select [ngModel]="empaque.galletas[0].cantidad" (ngModelChange)="cambioGalletas1($event)">
+                    <option *ngFor="let i of galletasM">{{i}}</option>
+                </select>
+            </div>
+            <div *ngIf="this.empaque.tamano=='GRANDE'" class="boxStyle13">
+                <select [ngModel]="empaque.galletas[0].cantidad" (ngModelChange)="cambioGalletas1($event)">
+                    <option *ngFor="let i of galletasG">{{i}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="col-4">
+            <label for="exampleFormControlSelect1">CANTIDAD</label>
+            <div *ngIf="this.empaque.tamano=='PEQUEÑO'" class="boxStyle13">
+                <select [ngModel]="empaque.galletas[1].cantidad" (ngModelChange)="cambioGalletas2($event)">
+                        <option *ngFor="let i of galletasM">{{i}}</option>
+                    </select>
+            </div>
+            <div *ngIf="this.empaque.tamano=='GRANDE'" class="boxStyle13">
+                <select [ngModel]="empaque.galletas[1].cantidad" (ngModelChange)="cambioGalletas2($event)">
+                        <option *ngFor="let i of galletasG">{{i}}</option>
+                    </select>
+            </div>
+            <br>
+            <img class="inst4 hol" src="assets/img/boton2@2x.png" (click)="hacerPedido()">
+        </div>
+        <div class="col-4">
+            <label for="exampleFormControlSelect1">CANTIDAD</label>
+            <div *ngIf="this.empaque.tamano=='PEQUEÑO'" class="boxStyle13">
+                <select [ngModel]="empaque.galletas[2].cantidad" (ngModelChange)="cambioGalletas3($event)">
+                        <option *ngFor="let i of galletasM">{{i}}</option>
+                    </select>
+            </div>
+            <div *ngIf="this.empaque.tamano=='GRANDE'" class="boxStyle13">
+                <select [ngModel]="empaque.galletas[2].cantidad" (ngModelChange)="cambioGalletas3($event)">
+                        <option *ngFor="let i of galletasG">{{i}}</option>
+                    </select>
+            </div>
+        </div>
+
+    </div>
+</div>
+<app-footer></app-footer>
